@@ -1,4 +1,4 @@
-class ChangeCookTimeForRecipes < ActiveRecord::Migration
+class ChangeCookTimeForRecipes < ActiveRecord::Migration [4.2]
   def change
     change_table :recipes do |t|
       t.change :cook_time, :text
