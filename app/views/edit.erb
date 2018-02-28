@@ -4,9 +4,9 @@
 <h4>Recipe Cook Time: <%= @recipe.cook_time %></h4>
 
 <form action="/recipes/<%= @recipe.id %>" method="POST">
-  <input type="text" name="name" placeholder="Recipe Name:">
-  <input type="textarea" name="ingredients" placeholder="Ingredients:">
-  <input type="text" name="cook_time" placeholder="Cook Time:">
+  <input type="text" name="name" value="<%= @recipe.name %>">
+  <input type="textarea" name="ingredients" value="<%= @recipe.ingredients %>">
+  <input type="text" name="cook_time" value="<%= @recipe.cook_time %>">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="submit" value="Submit">
 </form>
